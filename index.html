@@ -7,12 +7,15 @@
 </head>
 <body>
   <script type="text/javascript">
+  var createList=function(){
   var animals = ["Armadillo", "Tiger", "Bear", "Platapus"];
   d3.select("body").selectAll("p")
     .data(animals)
     .enter()
     .append("p")
-    .text(function(d){return d;});
+    .text(function(d){return d;});}
   </script>
+  
+  <button onclick="createList()" type="button" id="startButton">Click Here to Turn Array to List</button>
   </body>
   </html>
